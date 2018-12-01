@@ -3,18 +3,36 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div>
+  <h2>Unformatted Date : {{toDate}}</h2>
+  <h2>Formatted Date : {{toDate | date : 'medium'}}</h2>
+</div><hr/>
 
+<div>
+              <p>medium : {{toDate | date:'medium'}} </p>
+              <p>short : {{toDate | date:'short'}} </p>
+              <p>fullDate : {{toDate | date:'fullDate'}} </p>
+              <p>longDate : {{toDate | date:'longDate'}} </p>
+              <p>mediumDate : {{toDate | date:'mediumDate'}} </p>
+              <p>shortDate : {{toDate | date:'shortDate'}} </p>
+              <p>mediumTime : {{toDate | date:'mediumTime'}} </p>
+              <p>dd-MM-y : {{toDate | date:'dd-MM-y'}} </p>
+              <p>dd-MM-yy HH:mm : {{toDate | date:'dd-MM-yy HH:mm'}} </p>
+</div><hr/>
+<div>
+    <p>Binding With Property : {{msg}}</p>
+    <p>Using Pipe UpperCase : {{msg | uppercase}}</p>
+    <p>Using Pipe LowerCase : {{msg | lowercase}}</p>
+</div><hr/>
+<div>
+              <p>Complete String :{{msg}} </p>
+              <p>Example 1 :{{msg | slice:11:20}} </p>
+              <p>Example 2 :{{msg | slice:-9}} </p>
+</div><hr/>
+<div>
+  <p>Given Number : {{num}}</p>
+  <p>Formatted Number : {{num | number}}</p>
+  <p>Formatted Decimal : {{num | number : '3.1-2'}}</p>
+  <p>Formatted : {{num | number : '7.1-5'}}</p>
+</div>
